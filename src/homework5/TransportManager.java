@@ -50,12 +50,12 @@ public class TransportManager {
         }
     }
 
-    private static void printDetails(int passengers, double distance, Transport transportBicycle) {
-        System.out.println("Transport Info: " + transportBicycle.getTransportInfo());
+    private static void printDetails(int passengers, double distance, Transport transportType) {
+        System.out.println("Transport Info: " + transportType.getTransportInfo());
         System.out.println("Distance: " + String.format("%.2f", distance) + " km");
         System.out.println("Fare for " + passengers + " passenger(s): " +
-                String.format("%.2f", transportBicycle.calculateFare(distance, passengers)) + " AZN");
+                String.format("%.2f", transportType.calculateFare(distance, passengers)) + " AZN");
         System.out.println("Estimated time: " +
-                String.format("%.2f", transportBicycle.calculateTime(distance)) + " hours");
+                String.format("%.2f", transportType.calculateTime(distance)) + " hours");
     }
 }
