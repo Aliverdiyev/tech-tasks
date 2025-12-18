@@ -1,1 +1,1 @@
-practise make perfect
+practise makes perfect
